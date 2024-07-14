@@ -11,7 +11,7 @@
 .display-flex{
     display: flex;
 }
-/* color-dark-2 */
+/* color--*/
 .dark-2{
     color: rgb(66, 66, 66);
 }
@@ -54,9 +54,10 @@
     font-size: 4rem;
     font-weight: 700px;
 }
-.banner-description{
+.title-description{
     font-size: 1rem;
     font-weight: 400;
+    color: rgb(114, 114, 114);
 }
 .btn-primary{
     width: 180px;
@@ -68,14 +69,91 @@
     border-radius: 8px;
     border: none;
     color: #fff;
+    cursor: pointer;
 }
 .banner-img{
     width: 100%;
 }
+.main-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.feature-container{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.feature-text{
+    width: 537px;
+    height: 304px;
+    margin: 0 auto;
+}
+#quick-list{
+    color: rgb(114, 114, 114);
+}
+#features{
+    color: rgb(255, 144, 14);
+}
+#love-title{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 21px;
+}
+/* card section */
+.feature-card{
+    width: 586px;
+    height: 171px;
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.card-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    
+}
+.love-features{
+    display: flex;
+    gap: 150px;
+}
+#btn-secoundry{
+    width: 342px;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 45px 42px;
+    font-size: 1.2rem;
+    color: #fff;
+    position: relative;
+    right: 100px;
+    top: -125px;
+}
+.year{
+    font-size: 4rem;
+    font-weight: 700px;
+    color: #fff;
+}
+
+
+
+
+
 /* responsive media query */
-@media screen and (max-width: 576px) {
-    .nav-bar, .nav-links{
+@media screen and (max-width:576px) {
+    .navbar, .nav-links, .feature-container{
     flex-direction: column;
-    background-color: red;
     }
+    .feature-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
 }

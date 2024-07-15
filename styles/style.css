@@ -55,7 +55,7 @@
     font-weight: 700px;
 }
 .title-description{
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: rgb(114, 114, 114);
 }
@@ -123,6 +123,7 @@
 .love-features{
     display: flex;
     gap: 150px;
+    margin-bottom: 100px;
 }
 #btn-secoundry{
     width: 342px;
@@ -142,7 +143,60 @@
     font-weight: 700px;
     color: #fff;
 }
+/* some fact icon section */
 
+.icon-card{
+    width: 241px;
+    height: 241px;
+    padding: 35px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+
+}
+.awards{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0px;
+}
+.award-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 10px;
+}
+.icon-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 154px;
+}
+/* sponsor section */
+.sponsor-contain{
+    text-align: center;
+    margin-top: 180px;
+}
+.sponsor-img{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 154px;
+}
+/* footer section */
+footer{
+    width: 1440px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: rgb(255, 244, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-text{
+    width: 620px;
+    height: 23px;
+}
 
 
 

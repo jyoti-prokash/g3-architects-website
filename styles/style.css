@@ -62,14 +62,21 @@
 .btn-primary{
     width: 180px;
     height: 64px;
-    background-color: rgb(255, 144, 14);
     padding: 20px 25px;
+    background-color: rgb(255, 144, 14);
     font-size: 1.2rem;
     font-weight: 600px;
     border-radius: 8px;
     border: none;
     color: #fff;
     cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0.3s;
+}
+.btn-primary:hover{
+    transform: translateY(-10px);
+    background-color: tomato;
 }
 .banner-img{
     width: 100%;
@@ -105,6 +112,15 @@
     border-left: 5px solid rgb(255, 144, 14);
     padding-left: 21px;
 }
+.love-content{
+    width: 50%;
+}
+.img-sec{
+    width: 50%;
+}
+.love-img{
+    width: 100%;
+}
 /* card section */
 .feature-card{
     width: 586px;
@@ -118,11 +134,10 @@
 .card-title{
     font-size: 1.4rem;
     font-weight: 600;
-    
 }
 .love-features{
     display: flex;
-    gap: 150px;
+    gap: 100px;
     margin-bottom: 100px;
 }
 #btn-secoundry{
@@ -144,7 +159,6 @@
     color: #fff;
 }
 /* some fact icon section */
-
 .icon-card{
     width: 241px;
     height: 241px;
@@ -156,7 +170,6 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 70px;
-
 }
 .awards{
     font-size: 1.2rem;
@@ -198,55 +211,3 @@ footer{
     height: 23px;
 }
 
-
-/* responsive media query small device */
-@media screen and (max-width:576px) {
-    .navbar, .nav-links, .feature-container, .sponsor-contain{
-    flex-direction: column;
-    }
-    .feature-img{
-        grid-template-columns: repeat(1,1fr);
-        gap: 10px;
-    }
-    .icon-container{
-        grid-template-columns: repeat(1,1fr);
-        gap: 10px;
-        padding-left: 30%;
-    }
-
-    
-    .sponsor-img{
-        grid-template-columns: repeat(1,1fr);
-        gap: 30px;
-        margin: 0 auto;
-        align-items: center;
-        padding-left: 30%;
-        
-    }
-    .banner-content{
-        max-width: 50%;
-        text-align: none;
-    }
-    .love-features{
-        flex-direction: column;
-        width: 100%;
-
-    }
-    footer{
-        flex-direction: column;
-        width: 100%;
-        margin: 10px auto;
-        align-items: start;
-        
-    }
-    .footer-text{
-        width: 400px;
-        text-align: center;
-        padding: 10px;
-    }
-}
-
-/* responsive media query for tab/medium device */
-@media screen and (min-width:577px) and (max-width:991px) {
-    
-}
